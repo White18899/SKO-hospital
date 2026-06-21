@@ -39,6 +39,85 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', handleScroll);
     handleScroll(); // Initial check
 
+    // --- Scroll Progress Bar ---
+    const progressBar = document.getElementById('scroll-progress-bar');
+    
+    function updateScrollProgress() {
+        if (!progressBar) return;
+        const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+        if (totalHeight > 0) {
+            const progress = (window.scrollY / totalHeight) * 100;
+            progressBar.style.width = `${progress}%`;
+        }
+    }
+
+    // --- Hero Scroll Parallax & Fade ---
+    const heroText = document.querySelector('.hero-text-wrapper');
+    const heroImage = document.querySelector('.clinic-photo-wrapper');
+    
+    function handleHeroParallax() {
+        const scrolled = window.scrollY;
+        if (scrolled < window.innerHeight) {
+            if (heroText) {
+                heroText.style.transform = `translateY(${scrolled * 0.12}px)`;
+                heroText.style.opacity = `${1 - scrolled / (window.innerHeight * 0.75)}`;
+            }
+            if (heroImage) {
+                heroImage.style.transform = `translateY(${scrolled * 0.18}px)`;
+                heroImage.style.opacity = `${1 - scrolled / (window.innerHeight * 0.75)}`;
+            }
+        }
+    }
+
+    // High performance scroll listener loop using requestAnimationFrame
+    let isScrolling = false;
+    window.addEventListener('scroll', () => {
+        if (!isScrolling) {
+            window.requestAnimationFrame(() => {
+                updateScrollProgress();
+                handleHeroParallax();
+                isScrolling = false;
+            });
+            isScrolling = true;
+        }
+    });
+
+    // Run initial progress bar setup
+    updateScrollProgress();
+
+    // --- Scroll Reveal Animations (Intersection Observer) ---
+    const revealElements = document.querySelectorAll('.reveal');
+
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const el = entry.target;
+                if (!el.classList.contains('revealed')) {
+                    // Stagger sibling transitions if children of a grid container
+                    const parent = el.parentElement;
+                    if (parent && (parent.classList.contains('specialties-grid') || 
+                                   parent.classList.contains('facilities-grid') || 
+                                   parent.classList.contains('stats-grid'))) {
+                        const children = Array.from(parent.querySelectorAll('.reveal'));
+                        const index = children.indexOf(el);
+                        if (index !== -1) {
+                            el.style.transitionDelay = `${index * 0.12}s`;
+                        }
+                    }
+                    el.classList.add('revealed');
+                    // Stop observing once animation triggered
+                    revealObserver.unobserve(el);
+                }
+            }
+        });
+    }, {
+        root: null,
+        threshold: 0.05,
+        rootMargin: '0px 0px -50px 0px' // Trigger slightly before they enter the center viewport
+    });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+
     // --- Mobile Menu Toggle ---
     const mobileToggle = document.getElementById('mobile-toggle');
     const navMenu = document.getElementById('nav-menu');

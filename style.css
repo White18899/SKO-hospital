@@ -1913,6 +1913,79 @@ p {
 .hero-text-wrapper .hero-actions { animation-delay: 0.4s; }
 .hero-form-panel { animation-delay: 0.3s; }
 
+/* ==========================================================================
+   Premium Scroll Effects & Scroll Reveal System
+   ========================================================================== */
+
+/* Scroll Progress Bar at the top of the page */
+.scroll-progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-accent-bronze), var(--color-text-white));
+    z-index: 2000;
+    transition: width 0.1s ease-out;
+}
+
+/* Scroll Reveal Base styling */
+.reveal {
+    opacity: 0;
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Reveal transition presets */
+.reveal-fade {
+    transform: none;
+}
+
+.reveal-slide-up {
+    transform: translateY(40px);
+}
+
+.reveal-slide-down {
+    transform: translateY(-40px);
+}
+
+.reveal-slide-left {
+    transform: translateX(-40px);
+}
+
+.reveal-slide-right {
+    transform: translateX(40px);
+}
+
+.reveal-scale {
+    transform: scale(0.95);
+}
+
+/* Revealed active state trigger class */
+.reveal.revealed {
+    opacity: 1;
+    transform: translate(0) scale(1);
+}
+
+/* Disable horizontal scroll reveal translation on mobile to prevent overflows */
+@media (max-width: 768px) {
+    .reveal-slide-left:not(.revealed),
+    .reveal-slide-right:not(.revealed) {
+        transform: translateY(30px);
+    }
+}
+
+/* Optimized CSS variables for scroll-linked elements to ensure smooth updates */
+.hero-text-wrapper,
+.clinic-photo-wrapper {
+    will-change: transform, opacity;
+    transition: transform 0.1s cubic-bezier(0.16, 1, 0.3, 1), 
+                opacity 0.15s ease-out;
+}
+
 /* Responsive Layout Breakpoints */
 @media (max-width: 1024px) {
     .hero-title {
