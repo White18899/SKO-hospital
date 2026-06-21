@@ -63,7 +63,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function animateCounters() {
         statNumbers.forEach(stat => {
-            const target = parseInt(stat.getAttribute('data-target'), 10);
+            const targetVal = stat.getAttribute('data-target');
+            const isFloat = targetVal.includes('.');
+            const target = isFloat ? parseFloat(targetVal) : parseInt(targetVal, 10);
             const duration = 2000; // 2 seconds
             const stepTime = 20; // 50 updates per second
             const steps = duration / stepTime;
@@ -74,11 +76,20 @@ document.addEventListener('DOMContentLoaded', () => {
             const timer = setInterval(() => {
                 current += increment;
                 step++;
-                stat.textContent = Math.floor(current).toLocaleString();
+                
+                if (isFloat) {
+                    stat.textContent = current.toFixed(1);
+                } else {
+                    stat.textContent = Math.floor(current).toLocaleString();
+                }
 
                 if (step >= steps) {
                     clearInterval(timer);
-                    stat.textContent = target.toLocaleString(); // Exact target
+                    if (isFloat) {
+                        stat.textContent = target.toFixed(1);
+                    } else {
+                        stat.textContent = target.toLocaleString();
+                    }
                 }
             }, stepTime);
         });

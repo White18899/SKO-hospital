@@ -341,62 +341,26 @@ p {
     transition: var(--transition-smooth);
 }
 
-/* Hero Section with Video Background */
+/* Hero Section with Clinic Front Photo */
 .hero-section {
     position: relative;
-    min-height: 100vh;
+    background-color: var(--color-bg-darkest);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 120px;
+    padding-top: 140px;
+    padding-bottom: 100px;
     overflow: hidden;
-}
-
-.video-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-.hero-fallback-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-}
-
-.hero-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.video-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, rgba(19, 13, 10, 0.95) 40%, rgba(19, 13, 10, 0.7) 100%);
 }
 
 .hero-content {
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-columns: 1.1fr 0.9fr;
     gap: 50px;
     align-items: center;
     position: relative;
     z-index: 10;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
 }
 
 .hero-text-wrapper {
@@ -418,18 +382,18 @@ p {
 }
 
 .hero-title {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 400;
-    line-height: 1.1;
-    letter-spacing: -0.03em;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
     margin-bottom: 24px;
     color: var(--color-text-white);
 }
 
 .hero-desc {
-    font-size: 1.125rem;
-    line-height: 1.6;
-    margin-bottom: 40px;
+    font-size: 1.05rem;
+    line-height: 1.65;
+    margin-bottom: 35px;
     opacity: 0.85;
 }
 
@@ -438,82 +402,39 @@ p {
     gap: 16px;
 }
 
-/* Quick Form Panel in Hero */
-.hero-form-panel {
-    background-color: rgba(30, 21, 16, 0.8);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+.hero-image-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clinic-photo-wrapper {
+    background-color: var(--color-bg-dark);
     border: 1px solid rgba(197, 168, 128, 0.15);
-    padding: 35px;
+    padding: 12px;
     border-radius: var(--border-radius-md);
     box-shadow: var(--shadow-soft);
+    width: 100%;
 }
 
-.hero-form-panel h3 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin-bottom: 6px;
+.clinic-front-img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: var(--border-radius-sm);
+    border: 1px solid rgba(250, 249, 246, 0.05);
 }
 
-.hero-form-panel p {
-    font-size: 0.85rem;
-    color: var(--color-accent-light);
-    margin-bottom: 24px;
-}
-
-.form-group {
-    margin-bottom: 16px;
-    display: flex;
-    flex-direction: column;
-}
-
-.form-group label {
+.image-label {
+    margin-top: 12px;
     font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
     color: var(--color-accent-bronze);
-    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    text-align: center;
     font-weight: 500;
 }
 
-.form-group input,
-.form-group select,
-.form-group textarea {
-    width: 100%;
-    background-color: rgba(19, 13, 10, 0.6);
-    border: 1px solid rgba(197, 168, 128, 0.2);
-    color: var(--color-text-white);
-    padding: 14px;
-    border-radius: var(--border-radius-sm);
-    font-family: var(--font-body);
-    font-size: 0.9rem;
-    transition: var(--transition-smooth);
-    outline: none;
-}
-
-.form-group input::placeholder,
-.form-group textarea::placeholder {
-    color: var(--color-text-muted);
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-    border-color: var(--color-accent-bronze);
-    background-color: rgba(19, 13, 10, 0.9);
-    box-shadow: 0 0 10px rgba(197, 168, 128, 0.1);
-}
-
-/* Custom dropdown arrow for select elements */
-.form-group select {
-    appearance: none;
-    -webkit-appearance: none;
-    background-image: url("data:image/svg+xml;utf8,<svg fill='%23C5A880' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
-    background-repeat: no-repeat;
-    background-position: right 14px center;
-    background-size: 16px;
-    padding-right: 40px;
-}
 
 /* Quick Contact Bar below Hero */
 .quick-contact-bar {
@@ -1401,6 +1322,59 @@ p {
     gap: 20px;
 }
 
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-accent-bronze);
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    background-color: rgba(19, 13, 10, 0.6);
+    border: 1px solid rgba(197, 168, 128, 0.2);
+    color: var(--color-text-white);
+    padding: 14px;
+    border-radius: var(--border-radius-sm);
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    transition: var(--transition-smooth);
+    outline: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--color-text-muted);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--color-accent-bronze);
+    background-color: rgba(19, 13, 10, 0.9);
+    box-shadow: 0 0 10px rgba(197, 168, 128, 0.1);
+}
+
+.form-group select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%23C5A880' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    background-size: 16px;
+    padding-right: 40px;
+}
+
 /* Footer Section layout */
 .footer {
     background-color: #0F0A08; /* Extremely dark warm brown */
@@ -1531,6 +1505,8 @@ p {
 .float-call-btn svg {
     width: 22px;
     height: 22px;
+    display: block;
+    flex-shrink: 0;
 }
 
 .whatsapp-widget-wrapper {
@@ -1542,8 +1518,10 @@ p {
 }
 
 .float-wa-btn svg {
-    width: 26px;
-    height: 26px;
+    width: 28px;
+    height: 28px;
+    display: block;
+    flex-shrink: 0;
 }
 
 .wa-badge {
