@@ -1701,8 +1701,8 @@ p {
 
 .modal-close {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 10px;
+    right: 10px;
     background: transparent;
     border: none;
     color: var(--color-text-white);
@@ -1711,6 +1711,12 @@ p {
     z-index: 20;
     line-height: 1;
     transition: var(--transition-smooth);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
 }
 
 .modal-close:hover {
@@ -2071,5 +2077,103 @@ p {
     
     .modal-body-scroll {
         padding: 20px;
+    }
+
+    /* Added mobile optimizations */
+    .hero-title {
+        font-size: 2.25rem;
+    }
+
+    .vision-mission-cards {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .chairman-image-wrapper {
+        height: 280px;
+    }
+
+    .chairman-details {
+        padding: 20px;
+    }
+
+    .specialty-card {
+        padding: 24px;
+    }
+
+    .doc-info-box {
+        padding: 0 20px 30px 20px;
+    }
+
+    .care-card {
+        padding: 24px;
+    }
+
+    .testimonial-text {
+        font-size: 1.15rem;
+        line-height: 1.5;
+    }
+
+    .modal-footer {
+        padding: 15px 20px;
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    .modal-footer .btn {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .toast {
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+        transform: translateY(150px);
+    }
+
+    .toast.active {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+    
+    .hero-actions .btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .doc-actions {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .doc-actions .btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .floating-widget-container {
+        right: 16px;
+        bottom: 16px;
+    }
+    
+    .whatsapp-chat-box {
+        position: fixed;
+        bottom: 90px;
+        left: 16px;
+        right: 16px;
+        width: auto;
     }
 }
