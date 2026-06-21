@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sri Krishna Orthopedic Hospital in Gajuwaka, Visakhapatnam. Led by Dr. M. Murali Mohan (MS, Ortho). Expert joint replacement, spine surgery, and fracture care. Book your appointment online.">
+    <title>Sri Krishna Orthopedic Hospital | Premium Joint & Spine Care</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#home" class="logo" id="logo-link">
+                <span class="logo-title">SRI KRISHNA</span>
+                <span class="logo-subtitle">ORTHOPEDIC HOSPITAL</span>
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#specialties" class="nav-link">Specialties</a>
+                <a href="#doctors" class="nav-link">Doctors</a>
+                <a href="#facilities" class="nav-link">Facilities</a>
+                <a href="#patient-care" class="nav-link">Patient Care</a>
+                <a href="#contact" class="nav-link nav-btn">Book Appointment</a>
+            </nav>
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+
+        <!-- Home / Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="video-container">
+                <!-- Fallback background image -->
+                <div class="hero-fallback-bg" style="background-image: url('https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&w=1600&q=80');"></div>
+                <video autoplay loop muted playsinline class="hero-video" id="hero-video">
+                    <source src="https://assets.mixkit.co/videos/preview/mixkit-surgeons-performing-a-surgery-in-a-sterile-room-27513-large.mp4" type="video/mp4">
+                </video>
+                <div class="video-overlay"></div>
+            </div>
+            
+            <div class="container hero-content">
+                <div class="hero-text-wrapper">
+                    <span class="hero-badge animate-fade">NABH Accredited Orthopedic Care</span>
+                    <h1 class="hero-title animate-fade">Restoring Movement.<br>Renewing Life.</h1>
+                    <p class="hero-desc animate-fade">Visakhapatnam's premier orthopedic center specializing in advanced joint replacements, spine surgery, and comprehensive rehabilitation.</p>
+                    <div class="hero-actions animate-fade">
+                        <a href="#contact" class="btn btn-primary">Book Consultation</a>
+                        <a href="tel:+919849256092" class="btn btn-secondary">
+                            <svg class="icon" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                            Emergency Call
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Appointment Form Panel -->
+                <div class="hero-form-panel animate-fade">
+                    <h3>Quick Booking</h3>
+                    <p>Schedule your consultation instantly</p>
+                    <form id="quick-book-form">
+                        <div class="form-group">
+                            <input type="text" id="quick-name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="quick-phone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="quick-specialty" required>
+                                <option value="" disabled selected>Select Specialty</option>
+                                <option value="joint-replacement">Joint Replacement</option>
+                                <option value="spine-surgery">Spine Surgery</option>
+                                <option value="trauma-fracture">Trauma & Fracture</option>
+                                <option value="sports-medicine">Sports Medicine</option>
+                                <option value="physiotherapy">Physiotherapy</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Request Call Back</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Quick Contact Bar -->
+            <div class="quick-contact-bar">
+                <div class="container quick-bar-grid">
+                    <div class="quick-item">
+                        <div class="quick-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        </div>
+                        <div class="quick-text">
+                            <h4>Our Location</h4>
+                            <p>Beside Police Station, Gajuwaka</p>
+                        </div>
+                    </div>
+                    <div class="quick-item">
+                        <div class="quick-icon">
+                            <svg viewBox="0 0 24 24"><path d="M22 5.18L10.59 16.6l-4.24-4.24 1.41-1.41 2.83 2.83 10-10L22 5.18zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10c0-.83-.1-1.64-.3-2.42l-1.62 1.62c.2.26.34.56.44.89-.69 2.58-3 4.41-5.52 4.41-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.16.68 4.25 1.77L18.89 4.9C17.18 3.1 14.71 2 12 2z"/></svg>
+                        </div>
+                        <div class="quick-text">
+                            <h4>24/7 Trauma Care</h4>
+                            <p>Call: +91 98492 56092</p>
+                        </div>
+                    </div>
+                    <div class="quick-item">
+                        <div class="quick-icon">
+                            <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                        </div>
+                        <div class="quick-text">
+                            <h4>Visiting Hours</h4>
+                            <p>Mon - Sat: 10AM-12PM, 6PM-8PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="section-subtitle">Since 2011</span>
+                    <h2 class="section-title">Dedicated to Bone and Joint Health</h2>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-info">
+                        <p class="lead-text">Sri Krishna Orthopedic Hospital is a premier 25-bed specialty care center situated in the heart of Gajuwaka, Visakhapatnam. Guided by clinical excellence and ethical practices, we provide state-of-the-art diagnostic and surgical solutions for complex bone and joint disorders.</p>
+                        <p>Under the visionary leadership of Dr. M. Murali Mohan (MS, Ortho), our hospital has earned the trust of thousands of patients across Andhra Pradesh. We combine cutting-edge technology, modern modular operation theaters, and specialized rehabilitation to ensure rapid, painless recovery for our patients.</p>
+                        
+                        <div class="vision-mission-cards">
+                            <div class="vm-card">
+                                <h4>Our Mission</h4>
+                                <p>To deliver advanced, high-quality orthopedic care with empathy, safety, and transparency, restoring patients to active, pain-free lives.</p>
+                            </div>
+                            <div class="vm-card">
+                                <h4>Our Vision</h4>
+                                <p>To be the most trusted center of excellence for orthopedic surgery and physical rehabilitation in the region, recognized for positive patient outcomes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-chairman">
+                        <div class="chairman-card">
+                            <div class="chairman-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80" alt="Dr. M. Murali Mohan" class="chairman-img">
+                                <div class="badge-nabh">NABH ACCREDITED</div>
+                            </div>
+                            <div class="chairman-details">
+                                <span class="title">Founder & Chief Surgeon</span>
+                                <h3>Dr. M. Murali Mohan</h3>
+                                <span class="qualification">MBBS, MS (Orthopaedics)</span>
+                                <p class="message">"At Sri Krishna Orthopedic Hospital, our focus is entirely on patient-centric care. We believe that orthopedic treatment should be precise, accessible, and coupled with professional rehabilitation to help patients reclaim their active lifestyle."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Accreditations & Infrastructure highlights -->
+                <div class="infra-highlights section-padding-top">
+                    <h3 class="subsection-title">Hospital Infrastructure & Highlights</h3>
+                    <div class="infra-grid">
+                        <div class="infra-item">
+                            <div class="infra-icon">01</div>
+                            <h4>Modular OT</h4>
+                            <p>Equipped with laminar airflow systems and ultra-sterile environments for minimal post-operative infection rates.</p>
+                        </div>
+                        <div class="infra-item">
+                            <div class="infra-icon">02</div>
+                            <h4>In-House Diagnostics</h4>
+                            <p>High-resolution Digital X-ray, lab facilities, and advanced monitoring systems for accurate diagnostics.</p>
+                        </div>
+                        <div class="infra-item">
+                            <div class="infra-icon">03</div>
+                            <h4>Rehab Wing</h4>
+                            <p>Fully-equipped physiotherapy unit catering to post-surgical recovery and sports injury rehabilitation.</p>
+                        </div>
+                        <div class="infra-item">
+                            <div class="infra-icon">04</div>
+                            <h4>NABH Quality</h4>
+                            <p>Strict compliance with National Accreditation Board for Hospitals guidelines, ensuring premium patient safety protocols.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specialties Section -->
+        <section id="specialties" class="specialties-section section-padding bg-dark-brown">
+            <div class="container">
+                <div class="section-title-wrapper light-theme">
+                    <span class="section-subtitle">Excellence In Orthopedics</span>
+                    <h2 class="section-title">Our Medical Specialties</h2>
+                </div>
+                
+                <div class="specialties-grid">
+                    <!-- Specialty Card 1 -->
+                    <div class="specialty-card">
+                        <div class="spec-icon">
+                            <svg viewBox="0 0 24 24"><path d="M19 13H5v-2h14v2z"/></svg>
+                        </div>
+                        <h3>Joint Replacement</h3>
+                        <p>Total Knee Replacement (TKR), Total Hip Replacement (THR), and revision surgeries using durable, high-flex implants for maximum mobility.</p>
+                        <ul class="spec-features">
+                            <li>Minimally Invasive Techniques</li>
+                            <li>Rapid Recovery Protocols</li>
+                            <li>High-Flexion Implants</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Specialty Card 2 -->
+                    <div class="specialty-card">
+                        <div class="spec-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        </div>
+                        <h3>Spine Surgery</h3>
+                        <p>Advanced treatment for disc herniations, spinal stenosis, sciatica, and corrective spine stabilization using computer-assisted planning.</p>
+                        <ul class="spec-features">
+                            <li>Microdiscectomy</li>
+                            <li>Spinal Decompression</li>
+                            <li>Sciatica Management</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Specialty Card 3 -->
+                    <div class="specialty-card">
+                        <div class="spec-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                        </div>
+                        <h3>Trauma & Fracture Care</h3>
+                        <p>Round-the-clock polytrauma management, complex fracture fixation, non-union corrections, and emergency bone stabilization.</p>
+                        <ul class="spec-features">
+                            <li>24/7 Emergency Care</li>
+                            <li>Intramedullary Nailing</li>
+                            <li>Locking Plate Fixation</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Specialty Card 4 -->
+                    <div class="specialty-card">
+                        <div class="spec-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm8.94 3c-.46-4.17-3.77-7.48-7.94-7.94V1h-2v2.06C6.83 3.52 3.52 6.83 3.06 11H1v2h2.06c.46 4.17 3.77 7.48 7.94 7.94V23h-2v-2.06c4.17-.46 7.48-3.77 7.94-7.94H23v-2h-2.06z"/></svg>
+                        </div>
+                        <h3>Arthroscopy</h3>
+                        <p>Keyhole surgeries for diagnosing and repairing internal joint structures, ensuring minimal scarring and faster recovery.</p>
+                        <ul class="spec-features">
+                            <li>Knee & Shoulder Arthroscopy</li>
+                            <li>Meniscus Repair</li>
+                            <li>Diagnostic Joint Inspection</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Specialty Card 5 -->
+                    <div class="specialty-card">
+                        <div class="spec-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/></svg>
+                        </div>
+                        <h3>Sports Medicine</h3>
+                        <p>Treatment of ligament tears (ACL/PCL reconstruction), tendon injuries, joint instability, and tailored athletic recovery plans.</p>
+                        <ul class="spec-features">
+                            <li>ACL/PCL Reconstruction</li>
+                            <li>Rotator Cuff Repair</li>
+                            <li>Athletic Conditioning</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Specialty Card 6 -->
+                    <div class="specialty-card">
+                        <div class="spec-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 6c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm9 12h-6v5h-2v-5H9v-5h12v5z"/></svg>
+                        </div>
+                        <h3>Pediatric Orthopedics</h3>
+                        <p>Corrective treatment for congenital bone deformities (clubfoot, hip dysplasia), pediatric fractures, and childhood bone disorders.</p>
+                        <ul class="spec-features">
+                            <li>Clubfoot Correction</li>
+                            <li>Deformity Stabilization</li>
+                            <li>Pediatric Trauma Care</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Doctors Directory Section -->
+        <section id="doctors" class="doctors-section section-padding">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="section-subtitle">Our Specialists</span>
+                    <h2 class="section-title">Meet Our Medical Team</h2>
+                </div>
+                
+                <div class="doctors-directory">
+                    <!-- Lead Doctor Profile -->
+                    <div class="doctor-profile-card">
+                        <div class="doc-img-box">
+                            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=800&q=80" alt="Dr. M. Murali Mohan" class="doctor-photo">
+                        </div>
+                        <div class="doc-info-box">
+                            <span class="doc-tag">Chief Orthopedic Surgeon</span>
+                            <h3>Dr. M. Murali Mohan</h3>
+                            <span class="doc-spec">Joint Replacement & Trauma Specialist</span>
+                            <hr class="minimal-divider">
+                            <p class="doc-brief">Dr. M. Murali Mohan is a distinguished orthopedist with over 15 years of surgical experience in joint replacements, complex fracture management, and pediatric orthopedics. He is highly regarded for his precise diagnostics and successful patient recovery outcomes.</p>
+                            
+                            <table class="doc-stats-table">
+                                <tr>
+                                    <td><strong>Qualifications:</strong></td>
+                                    <td>MBBS, MS (Orthopaedics)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Languages:</strong></td>
+                                    <td>Telugu, English, Hindi</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Availability:</strong></td>
+                                    <td>Mon - Sat: 10:00 AM - 12:00 PM, 6:00 PM - 8:00 PM</td>
+                                </tr>
+                            </table>
+                            
+                            <div class="doc-actions">
+                                <a href="#contact" class="btn btn-primary" onclick="setDoctorSelect('Dr. M. Murali Mohan')">Book Appointment</a>
+                                <button class="btn btn-secondary" onclick="openDoctorModal()">View Detailed Bio</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Facilities & Technology Section -->
+        <section id="facilities" class="facilities-section section-padding bg-dark-brown">
+            <div class="container">
+                <div class="section-title-wrapper light-theme">
+                    <span class="section-subtitle">Our Facility</span>
+                    <h2 class="section-title">Advanced Medical Infrastructure</h2>
+                </div>
+                
+                <div class="facilities-slider-container">
+                    <div class="facilities-grid">
+                        <div class="facility-card">
+                            <div class="facility-image" style="background-image: url('https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=1200&q=80');"></div>
+                            <div class="facility-content">
+                                <h4>Modular Operating Theatre</h4>
+                                <p>Our state-of-the-art operating theater features laminar airflow systems, HEPA filtration, and clean-room wall paneling to reduce airborne infection risks to near zero. Equipped with modern anesthetic systems and advanced orthopedic navigation tools.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="facility-card">
+                            <div class="facility-image" style="background-image: url('https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1200&q=80');"></div>
+                            <div class="facility-content">
+                                <h4>Digital X-Ray & Diagnostics</h4>
+                                <p>Fitted with high-frequency digital radiograph equipment that delivers sharp, micro-detailed images within seconds. This allows our orthopedic team to assess joint alignment, fracture severity, and bone densities quickly and initiate treatment instantly.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="facility-card">
+                            <div class="facility-image" style="background-image: url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80');"></div>
+                            <div class="facility-content">
+                                <h4>Physiotherapy & Rehab Unit</h4>
+                                <p>A modern recovery facility loaded with advanced electrotherapy equipment, mechanical traction, muscle stimulators, and specialized exercise bars. Handled by expert therapists to accelerate rehabilitation post-surgery.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hospital Statistics -->
+        <section class="stats-section section-padding">
+            <div class="container stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Years of Clinical Service</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="10000">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Successful Procedures</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="25">0</span>
+                    <span class="stat-label">In-Patient Bed Capacity</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="99">0</span><span class="stat-plus">%</span>
+                    <span class="stat-label">Positive Patient Outcomes</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Patient Care Section -->
+        <section id="patient-care" class="patient-care-section section-padding">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="section-subtitle">Support & Insurance</span>
+                    <h2 class="section-title">Patient Resources & Care</h2>
+                </div>
+                
+                <div class="patient-care-grid">
+                    <!-- Left: Insurance and Packages -->
+                    <div class="care-info-wrapper">
+                        <div class="care-card">
+                            <h3>Insurance & Cashless Treatment</h3>
+                            <p>We partner with major Third Party Administrators (TPA) and health insurance providers in India to offer seamless cashless treatment facilities. Our administrative desk handles all insurance authorizations swiftly.</p>
+                            
+                            <div class="insurance-logo-grid">
+                                <span class="insurance-badge">Star Health</span>
+                                <span class="insurance-badge">HDFC ERGO</span>
+                                <span class="insurance-badge">ICICI Lombard</span>
+                                <span class="insurance-badge">Chola MS</span>
+                                <span class="insurance-badge">Medi Assist</span>
+                                <span class="insurance-badge">FHPL</span>
+                            </div>
+                        </div>
+                        
+                        <div class="care-card">
+                            <h3>Orthopedic Health Packages</h3>
+                            <p>Preventive bone health packages tailored to assess joint degeneration, mineral levels, and bone density markers.</p>
+                            <div class="packages-list">
+                                <div class="package-item">
+                                    <div class="package-details">
+                                        <h4>Bone Health Essential Checkup</h4>
+                                        <p>Includes digital X-ray of main joint, Serum Calcium, Vitamin D levels, and specialist orthopedic consultation.</p>
+                                    </div>
+                                    <div class="package-price">₹1,499</div>
+                                </div>
+                                <div class="package-item">
+                                    <div class="package-details">
+                                        <h4>Senior Citizen Joint Care Package</h4>
+                                        <p>Comprehensive orthopedic check, bone density evaluation, physiotherapy assessment, and pain management planning.</p>
+                                    </div>
+                                    <div class="package-price">₹2,499</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="care-card">
+                            <h3>Report Downloads</h3>
+                            <p>Access your lab reports and medical diagnostics online. Enter your patient ID to search and download files.</p>
+                            <div class="report-download-box">
+                                <input type="text" id="patient-id-input" placeholder="Enter Patient ID (e.g., SKO-2026)">
+                                <button class="btn btn-primary" onclick="triggerReportSearch()">Search Reports</button>
+                            </div>
+                            <div id="report-result-box" class="report-result-box hidden">
+                                <!-- Dynamically populated by JS -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right: FAQs (Accordion) -->
+                    <div class="faq-wrapper">
+                        <h3>Frequently Asked Questions</h3>
+                        <div class="faq-container">
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>What are the consultation hours at Sri Krishna Orthopedic Hospital?</span>
+                                    <span class="faq-toggle-icon">+</span>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Consultations are open Monday through Saturday. The morning session runs from 10:00 AM to 12:00 PM, and the evening session is from 6:00 PM to 8:00 PM. We advise calling in advance or booking an appointment through our online form to minimize waiting time.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>Do you offer cashless admission facilities for emergencies?</span>
+                                    <span class="faq-toggle-icon">+</span>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Yes, we offer cashless hospitalization through leading health insurance companies and TPAs. For planned surgeries, our pre-authorization desk takes 24-48 hours. In emergencies, we initiate the process immediately upon admission to ensure smooth, cashless processing.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>How long does recovery take after a Total Knee Replacement (TKR)?</span>
+                                    <span class="faq-toggle-icon">+</span>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Most patients start standing or walking short distances with support within 24 hours after surgery. Normal daily activities can usually be resumed in 4 to 6 weeks. A dedicated physiotherapy protocol of 2 to 3 weeks at our rehab center is crucial to achieving optimal joint extension and strength.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>Is physiotherapy mandatory after minor fracture fixations?</span>
+                                    <span class="faq-toggle-icon">+</span>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Physiotherapy helps restore complete range of motion, muscle strength, and flexibility after bone healing. While the bone union happens naturally, immobilization causes muscle stiffness. Guided physical therapy ensures your joint regains full functional utility.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patient Testimonials Carousel -->
+                <div class="testimonials-carousel-wrapper section-padding-top">
+                    <h3 class="subsection-title text-center">Patient Testimonials</h3>
+                    <p class="section-desc text-center">Real stories of recovery and pain relief from our patients</p>
+                    
+                    <div class="testimonials-slider" id="testimonials-slider">
+                        <!-- Slide 1 -->
+                        <div class="testimonial-slide active">
+                            <div class="rating-box">★★★★★</div>
+                            <p class="testimonial-text">"Dr. Murali Mohan performed my mother's total knee replacement surgery. The care she received was excellent. The doctor was highly patient and explained the entire process. Post-surgery physiotherapy team was great, and now she is walking without pain. Highly recommended!"</p>
+                            <span class="author-name">Ramana Murthy</span>
+                            <span class="author-info">Gajuwaka, Visakhapatnam</span>
+                        </div>
+                        
+                        <!-- Slide 2 -->
+                        <div class="testimonial-slide">
+                            <div class="rating-box">★★★★★</div>
+                            <p class="testimonial-text">"I visited Sri Krishna Hospital with a complex wrist fracture after a bike accident. Dr. Murali Mohan handled the surgery with utmost professionalism. The modular OT setup is impressive and very clean. My recovery was much faster than expected."</p>
+                            <span class="author-name">Suresh Kumar</span>
+                            <span class="author-info">Anakapalle</span>
+                        </div>
+                        
+                        <!-- Slide 3 -->
+                        <div class="testimonial-slide">
+                            <div class="rating-box">★★★★★</div>
+                            <p class="testimonial-text">"Superb physiotherapy services. I was suffering from severe lower back pain (sciatica) for months. The exercise sessions and clinical care suggested by the team resolved my pain completely without surgery. Extremely grateful."</p>
+                            <span class="author-name">K. Lakshmi</span>
+                            <span class="author-info">Srinagar, Visakhapatnam</span>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-dots" id="carousel-dots">
+                        <!-- Dot elements generated dynamically -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Appointment Section -->
+        <section id="contact" class="contact-section section-padding bg-dark-brown">
+            <div class="container">
+                <div class="section-title-wrapper light-theme">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Schedule An Appointment</h2>
+                </div>
+                
+                <div class="contact-grid">
+                    <!-- Left: Contact Details & Info -->
+                    <div class="contact-details-panel">
+                        <div class="contact-info-card">
+                            <h3>Hospital Address</h3>
+                            <p class="address-text">
+                                Sri Krishna Orthopedic Hospital<br>
+                                Door No. 6-66-15, Sramika Nagar,<br>
+                                Beside Gajuwaka Police Station,<br>
+                                Chinagantyada, Gajuwaka,<br>
+                                Visakhapatnam, Andhra Pradesh - 530026
+                            </p>
+                            <a href="https://maps.google.com/?q=Sri+Krishna+Orthopedic+Hospital+Gajuwaka+Visakhapatnam" target="_blank" class="map-link">
+                                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                                Find Us On Google Maps
+                            </a>
+                        </div>
+                        
+                        <div class="contact-info-card">
+                            <h3>Emergency Services</h3>
+                            <p>For trauma, acute joint injuries, and fractures, contact our 24/7 helpline number immediately.</p>
+                            <div class="phone-numbers">
+                                <a href="tel:+919849256092" class="phone-link">
+                                    <span class="label">Main Emergency:</span>
+                                    <span class="val">+91 98492 56092</span>
+                                </a>
+                                <a href="tel:08341933893" class="phone-link">
+                                    <span class="label">Reception:</span>
+                                    <span class="val">08341 933893</span>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-card">
+                            <h3>Consultation Times</h3>
+                            <ul class="timing-list">
+                                <li><span>Monday - Saturday:</span> <span>10:00 AM - 12:00 PM</span></li>
+                                <li><span></span> <span>06:00 PM - 08:00 PM</span></li>
+                                <li><span>Sunday:</span> <span class="closed">Emergency Only</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Right: Main Interactive Appointment Form -->
+                    <div class="appointment-form-panel">
+                        <h3>Consultation Booking Form</h3>
+                        <p>Fill out the fields below and our receptionist will call you back to confirm your appointment slot.</p>
+                        
+                        <form id="main-appointment-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="appt-name">Full Name</label>
+                                    <input type="text" id="appt-name" placeholder="Enter patient name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="appt-phone">Mobile Number</label>
+                                    <input type="tel" id="appt-phone" placeholder="Enter 10-digit number" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="appt-specialty">Specialty Required</label>
+                                    <select id="appt-specialty" required>
+                                        <option value="" disabled selected>Select specialty</option>
+                                        <option value="joint-replacement">Joint Replacement (Knee/Hip)</option>
+                                        <option value="spine-surgery">Spine & Sciatica Care</option>
+                                        <option value="trauma-fracture">Trauma & Fracture Surgery</option>
+                                        <option value="sports-medicine">Sports Injury & Ligaments</option>
+                                        <option value="pediatric">Pediatric Orthopedics</option>
+                                        <option value="physiotherapy">Physiotherapy & Rehab</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="appt-date">Preferred Date</label>
+                                    <input type="date" id="appt-date" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="appt-message">Brief Description of Pain/Condition</label>
+                                <textarea id="appt-message" rows="4" placeholder="Mention joint affected, symptoms (e.g., knee swelling, back pain, fracture description)"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-block">Confirm Appointment Details</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <span class="footer-logo">SRI KRISHNA</span>
+                <p>Highly specialized care for complex bone, joint, and spine disorders in Gajuwaka, Visakhapatnam. Delivering clinical perfection and patient safety since 2011.</p>
+                <div class="rating-display">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-val">4.8 / 5 based on patient reviews</span>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Hospital</a></li>
+                    <li><a href="#specialties">Orthopedic Specialties</a></li>
+                    <li><a href="#doctors">Our Surgeons</a></li>
+                    <li><a href="#facilities">Medical Facilities</a></li>
+                    <li><a href="#patient-care">Cashless & Insurance</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-services">
+                <h4>Core Specialties</h4>
+                <ul>
+                    <li><a href="#specialties">Knee Replacement</a></li>
+                    <li><a href="#specialties">Hip Replacement</a></li>
+                    <li><a href="#specialties">Spinal Decompression</a></li>
+                    <li><a href="#specialties">Fracture Reconstruction</a></li>
+                    <li><a href="#specialties">Ligament Reconstruction (ACL)</a></li>
+                    <li><a href="#specialties">Physical Therapy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <p>&copy; 2026 Sri Krishna Orthopedic Hospital. All rights reserved.</p>
+                <div class="footer-badges">
+                    <span>NABH Compliant</span> | <span>Clean Facility Initiative</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Actions: WhatsApp Widget & Quick Buttons -->
+    <div class="floating-widget-container">
+        <!-- Emergency Floating Call Button -->
+        <a href="tel:+919849256092" class="float-btn float-call-btn" aria-label="Call Emergency Line">
+            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        </a>
+        
+        <!-- WhatsApp Floating Chat Widget -->
+        <div class="whatsapp-widget-wrapper" id="whatsapp-widget-wrapper">
+            <div class="whatsapp-chat-box" id="whatsapp-chat-box">
+                <div class="chat-header">
+                    <div class="chat-avatar">KM</div>
+                    <div class="chat-title-info">
+                        <h4>Dr. Murali Mohan Practice</h4>
+                        <p>Typically replies within a few minutes</p>
+                    </div>
+                    <button class="chat-close-btn" id="chat-close-btn">&times;</button>
+                </div>
+                <div class="chat-body">
+                    <p class="chat-msg">Hello! I am Dr. Murali Mohan's clinical assistant. How can we help you with your bone or joint health today?</p>
+                </div>
+                <div class="chat-footer">
+                    <button class="btn btn-whatsapp-direct" onclick="launchWhatsApp()">
+                        <svg viewBox="0 0 24 24" class="wa-icon"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.003 5.324 5.328 0 11.859 0c3.161.001 6.132 1.23 8.367 3.467 2.235 2.237 3.461 5.207 3.46 8.371-.003 6.536-5.328 11.86-11.859 11.86-2.007-.001-3.98-.51-5.753-1.488L0 24zm6.59-4.859c1.72.1.343.79 2.51 1.093l.36.213c1.652.979 3.48 1.498 5.342 1.499 5.485 0 9.948-4.464 9.95-9.95.001-2.657-1.03-5.155-2.91-7.037-1.879-1.881-4.379-2.917-7.04-2.918-5.49 0-9.955 4.465-9.957 9.951-.001 1.92.502 3.796 1.458 5.473l.232.408-.979 3.578 3.664-.959c-.001 0 0 0 0 0zM17.9 14.545c-.328-.164-1.938-.957-2.231-1.064-.294-.107-.508-.164-.722.164-.214.328-.83.821-1.018 1.037-.187.215-.375.242-.703.078-.328-.164-1.385-.511-2.639-1.63-1.03-.919-1.63-2.05-1.832-2.378-.203-.329-.022-.507.142-.671.147-.148.328-.383.492-.574.164-.191.218-.328.328-.547.11-.219.055-.41-.027-.574-.082-.164-.722-1.742-.989-2.398-.26-.625-.526-.54-.722-.55l-.615-.01c-.214 0-.563.08-1.099.66-.536.579-2.043 1.996-2.043 4.869 0 2.873 2.091 5.65 2.385 6.044.294.393 4.117 6.287 9.973 8.82 1.393.602 2.482.962 3.328 1.23 1.4.444 2.674.381 3.679.23 1.121-.168 1.938-.797 2.231-1.53.294-.733.294-1.363.206-1.498-.088-.135-.328-.215-.656-.379z"/></svg>
+                        Start WhatsApp Chat
+                    </button>
+                </div>
+            </div>
+            
+            <button class="float-btn float-wa-btn" id="float-wa-btn" aria-label="Open Chat Help">
+                <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.003 5.324 5.328 0 11.859 0c3.161.001 6.132 1.23 8.367 3.467 2.235 2.237 3.461 5.207 3.46 8.371-.003 6.536-5.328 11.86-11.859 11.86-2.007-.001-3.98-.51-5.753-1.488L0 24zm6.59-4.859c1.72.1.343.79 2.51 1.093l.36.213c1.652.979 3.48 1.498 5.342 1.499 5.485 0 9.948-4.464 9.95-9.95.001-2.657-1.03-5.155-2.91-7.037-1.879-1.881-4.379-2.917-7.04-2.918-5.49 0-9.955 4.465-9.957 9.951-.001 1.92.502 3.796 1.458 5.473l.232.408-.979 3.578 3.664-.959c-.001 0 0 0 0 0zM17.9 14.545c-.328-.164-1.938-.957-2.231-1.064-.294-.107-.508-.164-.722.164-.214.328-.83.821-1.018 1.037-.187.215-.375.242-.703.078-.328-.164-1.385-.511-2.639-1.63-1.03-.919-1.63-2.05-1.832-2.378-.203-.329-.022-.507.142-.671.147-.148.328-.383.492-.574.164-.191.218-.328.328-.547.11-.219.055-.41-.027-.574-.082-.164-.722-1.742-.989-2.398-.26-.625-.526-.54-.722-.55l-.615-.01c-.214 0-.563.08-1.099.66-.536.579-2.043 1.996-2.043 4.869 0 2.873 2.091 5.65 2.385 6.044.294.393 4.117 6.287 9.973 8.82 1.393.602 2.482.962 3.328 1.23 1.4.444 2.674.381 3.679.23 1.121-.168 1.938-.797 2.231-1.53.294-.733.294-1.363.206-1.498-.088-.135-.328-.215-.656-.379z"/></svg>
+                <span class="wa-badge">1</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Doctor Detailed Profile Modal -->
+    <div class="modal" id="doctor-modal" role="dialog" aria-modal="true">
+        <div class="modal-overlay" onclick="closeDoctorModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeDoctorModal()">&times;</button>
+            <div class="modal-header">
+                <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=400&q=80" alt="Dr. M. Murali Mohan" class="modal-doc-photo">
+                <div class="modal-header-text">
+                    <span class="tag">Chief Surgeon</span>
+                    <h2>Dr. M. Murali Mohan</h2>
+                    <p class="qualification">MBBS, MS (Orthopaedics)</p>
+                    <p class="experience">15+ Years of Dedicated Clinical Experience</p>
+                </div>
+            </div>
+            
+            <div class="modal-body-scroll">
+                <div class="modal-section">
+                    <h3>Professional Biography</h3>
+                    <p>Dr. M. Murali Mohan is a highly renowned orthopedic surgeon based in Visakhapatnam, Andhra Pradesh. He founded Sri Krishna Orthopedic Hospital in 2011 with the goal of creating a dedicated center of excellence for bone, joint, and trauma care. He has successfully treated thousands of patients, restoring mobility to those suffering from degenerative joint conditions and complex physical trauma.</p>
+                </div>
+                
+                <div class="modal-section">
+                    <h3>Area of Specializations</h3>
+                    <ul class="modal-list">
+                        <li><strong>Primary & Revision Joint Replacement:</strong> Expertise in Total Knee Replacement (TKR) and Total Hip Replacement (THR) utilizing advanced low-wear implants.</li>
+                        <li><strong>Sports Medicine & Ligament Reconstruction:</strong> Arthroscopic repair of ACL, PCL, and meniscus tears, minimizing patient recovery duration.</li>
+                        <li><strong>Trauma & Complex Fractures:</strong> Experts in locked plating, intramedullary nailing, non-union corrections, and pediatric bone injuries.</li>
+                        <li><strong>Spine Care & Scientific Decompression:</strong> Handling chronic sciatica, cervical spondylosis, and spinal stability protocols.</li>
+                    </ul>
+                </div>
+                
+                <div class="modal-section">
+                    <h3>Education & Fellowships</h3>
+                    <ul class="modal-list">
+                        <li><strong>MS in Orthopaedics</strong> – Post-graduate surgical degree in orthopedic interventions.</li>
+                        <li><strong>MBBS</strong> – Medical school graduation in core medical diagnostics.</li>
+                        <li>Advanced surgical fellowships in Joint Reconstruction and Arthroscopic Procedures.</li>
+                    </ul>
+                </div>
+
+                <div class="modal-section">
+                    <h3>Out-Patient Timing Schedule</h3>
+                    <table class="timing-table">
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Morning Session</th>
+                                <th>Evening Session</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday - Saturday</td>
+                                <td>10:00 AM - 12:00 PM</td>
+                                <td>06:00 PM - 08:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td colspan="2" class="text-center italic text-light">Closed (Only Emergency Case Coverage Available)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeDoctorModal()">Close Window</button>
+                <a href="#contact" class="btn btn-primary" onclick="closeDoctorModal(); setDoctorSelect('Dr. M. Murali Mohan')">Book Consultation Slot</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Appointment Success Toast -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <svg class="toast-success-icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+            <div class="toast-text">
+                <h4 id="toast-title">Appointment Requested</h4>
+                <p id="toast-message">Our coordinator will call you back within 15 minutes.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script File -->
+    <script src="app.js"></script>
+</body>
+</html>
